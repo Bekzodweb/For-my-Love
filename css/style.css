@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100vw;
+	background-image: url(../img/people-2561053_1280.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.love-box {
+	height: 90vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.love-enter {
+	max-width: 15vw;
+	margin: auto;
+	height: 50vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.love-title {
+	margin: 1.5em;
+	color: rgba(255, 0, 0, 0.7);
+	/*font-family: 'Martel', serif;*/
+    font-family: 'Oleo Script', cursive;
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 22px;
+	text-shadow: 0px 2px 9px red;
+}
+.love-button {
+	outline: none;
+	border: none;
+	padding: 15px 25px;
+	background-color: rgba(255, 0, 0, 0.7);
+	color:white;
+	border-radius: 5px;
+	box-shadow: 0 9px rgba(255, 0, 0, 0.5);
+	/*box-shadow: 0px 2px 8px rgba(255, 0, 0, 1);*/
+	cursor: pointer;
+	text-align: center;
+}
+.love-words{ 
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: #e80202;
+  transform: rotate(45deg);
+  box-shadow: 30px 30px 200px rgba(0,0,0,.5);
+  animation-name: animate;
+  animation-delay: 0.5s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: all;
+  
+}
+@keyframes animate {
+	0% {
+		left: 50%;
+		top: 3%;
+	}
+	100% {
+		left: 50%;
+		top: 20%;
+		transform: scale(3);
+	}
+	
+}
+
+.love-words::after
+{
+  content: '';
+  position: absolute;
+  left: -23px;
+  width: 25px;
+  height: 50px;
+  background: #e80202;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.love-words::before
+{
+  content: '';
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+ background: #e80202;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.love-word {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	vertical-align: center;
+
+}
+@media (max-width: 1250px) {
+	
+
+	@keyframes animate {
+		0% {
+		left: 50%;
+		top: 3%;
+	}
+	100% {
+		left: 50%;
+		top: 15%;
+		transform: scale(2);
+	}
+	.love-words{ 
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background: #e80202;
+  transform: rotate(45deg);
+  box-shadow: 30px 30px 200px rgba(0,0,0,.5);
+  animation-name: animate;
+  animation-delay: 0.5s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: all;
+  
+}
+.love-words::after
+{
+  content: '';
+  position: absolute;
+  left: -23px;
+  width: 12.5px;
+  height: 25px;
+  background: #e80202;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.love-words::before
+{
+  content: '';
+  position: absolute;
+  top: -12.5px;
+  width: 25px;
+  height: 25px;
+ background: #e80202;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+}
